@@ -1,0 +1,24 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "Webserver that handles teh MQTT transsactiosn between broker, Arduino clients, and HTTP clients.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mqtt": "^2.15.0",
+    "mqtt-connection": "^3.2.0",
+    "nodemon": "^1.14.8",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "scripts": {
+    "start": "nodemon ./app.js --exec babel-node -e js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matias Salas",
+  "license": "ISC"
+}

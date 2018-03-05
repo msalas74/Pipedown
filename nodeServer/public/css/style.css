@@ -1,0 +1,185 @@
+@import 'https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Yeseva+One';
+
+/*font-family: 'Yeseva One', cursive;*/
+/*font-family: 'Merriweather Sans', sans-serif;*/
+/*font-family: 'Merriweather', serif;*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    color: #1E2835;
+    background-color: #F8F8F8;
+    font-size: 1.5em;
+    min-width: 750px;
+}
+
+header {
+  background-color: #9ABBFF;
+  margin:  0 0 20px 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
+header h1 {
+    color: white;
+    font-size: 3.5em;
+    font-family: 'Yeseva One', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+#top-message {
+  font-family: 'Merriweather Sans', sans-serif;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  width: 224px;
+  margin-left: -112px;
+  z-index: 10;
+}
+
+#designated-drawer {
+  font-family: 'Merriweather Sans', sans-serif;
+  position: absolute;
+  top: 10px;
+  width: 224px;
+  left: 10px;
+  z-index: 10;
+}
+
+#word {
+  margin-top: 1em;
+}
+
+#word span {
+  color: red;
+  font-size: 1.5em;
+  font-family: 'Yeseva One', cursive;
+}
+
+#players-guess-list {
+  font-family: 'Merriweather Sans', sans-serif;
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  width: 224px;
+  z-index: 10;
+}
+
+#main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  min-width: 750px;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#top-message {
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 240px;
+  margin-left: -120px;
+  z-index: 30
+}
+
+.logo img {
+  width: 120px;
+  border: 5px solid #9ABBFF;
+  border-radius: 60px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px #C7CACD solid;
+  display: block;
+}
+
+#pallet {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 750px;
+  margin-left: -375px;
+  text-align: center;
+}
+
+#pallet ul {
+  margin: 0 auto;
+}
+
+.color {
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 40px;
+
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    float: left;
+}
+
+#black {
+    background-color: black;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#violet {
+    background-color: violet;
+}
+
+@media screen
+and (max-width: 650px) {
+  .logo {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+  }
+
+  .logo img {
+    width: 120px;
+    border: 7px solid #9ABBFF;
+    border-radius: 60px;
+  }
+}
